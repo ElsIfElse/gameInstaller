@@ -1,0 +1,15 @@
+C:\csharp_apps\FirstWpfApp\BuildOutput\Release\net9.0-windows\FirstWpfApp.exe
+C:\csharp_apps\FirstWpfApp\BuildOutput\Release\net9.0-windows\FirstWpfApp.deps.json
+C:\csharp_apps\FirstWpfApp\BuildOutput\Release\net9.0-windows\FirstWpfApp.runtimeconfig.json
+C:\csharp_apps\FirstWpfApp\BuildOutput\Release\net9.0-windows\FirstWpfApp.dll
+C:\csharp_apps\FirstWpfApp\BuildOutput\Release\net9.0-windows\FirstWpfApp.pdb
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.AssemblyInfoInputs.cache
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.AssemblyInfo.cs
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.csproj.CoreCompileInputs.cache
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.dll
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\refint\FirstWpfApp.dll
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.pdb
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\FirstWpfApp.genruntimeconfig.cache
+C:\csharp_apps\FirstWpfApp\obj\Release\net9.0-windows\ref\FirstWpfApp.dll
+C:\csharp_apps\FirstWpfApp\BuildOutput\Release\net9.0-windows\images\logo.PNG
