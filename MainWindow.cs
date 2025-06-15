@@ -108,6 +108,9 @@ namespace MyWpfApp
             TextBlock header_Text = PageLayout.CreateText("Please wait while the game is being installed", 20, 2, 4, "Roboto");
             PageLayout.PlaceInLayout_Text(grid, header_Text, 0, 2);
 
+            TextBlock progress_Text = PageLayout.CreateText("",12, 2, 4, "Roboto");
+            PageLayout.PlaceInLayout_Text(grid, progress_Text, 1, 2);
+
             TextBlock status = PageLayout.CreateText("Status: DOWNLOADING GAME FILES", 12, 2, 4, "Roboto");
             PageLayout.PlaceInLayout_Text(grid, status, 2, 2);
 
@@ -118,8 +121,8 @@ namespace MyWpfApp
             {
                 try
                 {
-                    await DownloadFileAsync("https://github.com/ElsIfElse/mockData/archive/refs/heads/main.zip", @filePath + "\\dummy.zip", progressBar);
-                    // await DownloadFileAsync("https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-large-zip-file.zip", @filePath + "\\dummy.zip", progressBar);
+                    await DownloadFileAsync("https://drive.google.com/drive/folders/1UJc65Zvd8BaGcu6TK8lbr_zO5t9YnTo2?usp=drive_link", @filePath + "\\dummy.zip", progressBar,progress_Text);
+                    // await DownloadFileAsync("https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-large-zip-file.zip", @filePath + "\\dummy.zip", progressBar,progress_Text);
                     UnzipFile(@filePath + "\\dummy.zip", filePath, progressBar, status, mainWindow);
                 }
                 catch (Exception ex)
@@ -190,7 +193,7 @@ namespace MyWpfApp
             System.Windows.MessageBox.Show("Button Clicked", "Message", MessageBoxButton.OK, MessageBoxImage.Information, MessageBoxResult.OK, System.Windows.MessageBoxOptions.DefaultDesktopOnly);
         }
 
-        public static async Task DownloadFileAsync(string url, string filePath, System.Windows.Controls.ProgressBar progressBar)
+        public static async Task DownloadFileAsync(string url, string filePath, System.Windows.Controls.ProgressBar progressBar, TextBlock progress_Text)
         {
             try
             {
@@ -224,6 +227,7 @@ namespace MyWpfApp
                 {
                     await fileStream.WriteAsync(buffer, 0, bytesRead);
                     totalRead += bytesRead;
+                    progress_Text.Text = "Progress " + totalRead / 1024 / 1024 + "MB / " + totalBytes / 1024 / 1024 + "MB";
 
                     if (canReportProgress)
                     {

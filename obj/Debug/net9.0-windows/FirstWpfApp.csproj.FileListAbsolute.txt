@@ -18,3 +18,4 @@ C:\csharp_apps\FirstWpfApp\obj\Debug\net9.0-windows\FirstWpfApp.pdb
 C:\csharp_apps\FirstWpfApp\obj\Debug\net9.0-windows\FirstWpfApp.genruntimeconfig.cache
 C:\csharp_apps\FirstWpfApp\obj\Debug\net9.0-windows\ref\FirstWpfApp.dll
 C:\csharp_apps\FirstWpfApp\BuildOutput\Debug\net9.0-windows\images\logo.PNG
+C:\csharp_apps\FirstWpfApp\obj\Debug\net9.0-windows\FirstWpfApp.sourcelink.json
